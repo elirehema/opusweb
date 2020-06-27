@@ -29,7 +29,9 @@ jobs:
       run: flutter pub get
     - name: Upgrade dependencies
       run: flutter upgrade --force
+    - name: Checkout to Beta channel
       run: flutter channel beta
+    - name: Enable web configurations
       run: flutter config --enable-web
       #run: flutter test
     - name: Build app bundle
