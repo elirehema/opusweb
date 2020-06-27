@@ -56,8 +56,8 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
 
-    - name: run tests
-      uses: reactivecircus/android-emulator-runner@v2
+    - name: Android Emulator Runner
+      uses: ReactiveCircus/android-emulator-runner@v2.11.0
       with:
         api-level: ${{ matrix.api-level }}
         target: ${{ matrix.target }}
