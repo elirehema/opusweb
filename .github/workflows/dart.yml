@@ -33,7 +33,8 @@ jobs:
       run: flutter upgrade --force
     - name: Enable web configurations
       run: flutter config --enable-web
-      #run: flutter test
+    - name: Run Clean to reduce app sizes
+      run: flutter clean
     - name: Build app bundle
       run: flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
     - name: Split the APKs per ABI
