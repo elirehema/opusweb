@@ -28,11 +28,13 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
     - name: Upgrade dependencies
-      run : flutter upgrade --force
+      run: flutter upgrade --force
+      run: flutter channel beta
+      run: flutter config --enable-web
       #run: flutter test
-    - name: Build Android
-      run: flutter build apk
-    #- name: Build IOS
-    #  run: flutter build ios
+    - name: Build app bundle
+      run: flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+    - name: Split the APKs per ABI
+      run: flutter build appbundle --target-platform android-arm,android-arm64,android-x64
     - name: Build Web
       run: flutter build web
