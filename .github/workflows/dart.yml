@@ -19,4 +19,10 @@ jobs:
     - name: Install dependencies
       run: pub get
     - name: Run tests
-      run: pub run test
+      run: flutter test test/
+    - name:Build android
+      run: flutter build apk
+    - name:Build IOS
+      run: flutter build ios
+    - name:Build Web
+      run: flutter build web
