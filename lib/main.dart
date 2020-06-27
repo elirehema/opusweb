@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'OpusWeb',
         theme: ThemeData(
-            primarySwatch: Colors.blue,
+            primarySwatch: Colors.lightBluecommit,
             visualDensity: VisualDensity.adaptivePlatformDensity,
             textTheme: Theme.of(context).textTheme.apply(
                   fontFamily: 'Open Sans',
