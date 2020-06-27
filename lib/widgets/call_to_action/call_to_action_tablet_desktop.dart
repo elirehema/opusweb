@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-class CallToAction extends StatelessWidget {
-  final String title;
-  const CallToAction(this.title);
+import 'package:opus_web/constants/app_colors.dart';
 
+class CallToActionTabletDesktop extends StatelessWidget {
+  final String title;
+  const CallToActionTabletDesktop(this.title);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,8 +17,9 @@ class CallToAction extends StatelessWidget {
         ),
       ),
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 31, 229, 146),
-          borderRadius: BorderRadius.circular(5)),
+        color: primaryColor,
+        borderRadius: BorderRadius.circular(5),
+      ),
     );
   }
 }
