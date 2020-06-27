@@ -20,9 +20,9 @@ jobs:
       run: pub get
     - name: Run tests
       run: flutter test test/
-    - name:Build android
+    - name: Build android
       run: flutter build apk
-    - name:Build IOS
+    - name: Build IOS
       run: flutter build ios
-    - name:Build Web
+    - name: Build Web
       run: flutter build web
