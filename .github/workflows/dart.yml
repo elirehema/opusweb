@@ -27,10 +27,10 @@ jobs:
         channel: 'beta'
     - name: Install dependencies
       run: flutter pub get
-    - name: Upgrade dependencies
-      run: flutter upgrade --force
     - name: Checkout to Beta channel
       run: flutter channel beta
+    - name: Upgrade dependencies
+      run: flutter upgrade --force
     - name: Enable web configurations
       run: flutter config --enable-web
       #run: flutter test
